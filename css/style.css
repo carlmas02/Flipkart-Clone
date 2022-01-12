@@ -31,7 +31,7 @@ header ul{
 	/*align-items: center;*/
 	list-style: none;
 	margin: 0 auto;
-	/*box-sizing: border-box;*/
+	z-index: 1;
 
 }
 
@@ -105,28 +105,17 @@ header input{
 .card img{
 	cursor: pointer;
 
+
 }
 
 .card img:hover{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transform: scale(1.05,1.05);
+	/*z-index: -1;*/
 }
 
 
-.button {
-  background-color: #4CAF50; /* Green */
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  top :0;
-}
+
 
 .card p{
 	margin-bottom: 10px;
@@ -189,7 +178,45 @@ footer{
 
 @media screen and (max-width: 1150px){
 	header ul{
-			flex-direction: row;
-			background-color: red;
+
+			display: contents;
+
+			height: 76px;
 	}
+
+	header{
+			height: 86px;
+
+
+	}
+	header ul a{
+			position: absolute;
+			
+	}
+
+
+
+	.a1{
+			top: 10px ;
+			left: 120px;
+	}
+
+	.a2{
+		 top :10px;
+		 left: 180px;
+	}
+
+	.a3{
+		top :10px;
+		left : 255px;
+	}
+
+	header input{
+		position: absolute;
+		top : 40px;
+		height: 36px;
+		width: 250px;
+
+}
+
 }
